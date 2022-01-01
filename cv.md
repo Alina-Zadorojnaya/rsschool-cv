@@ -3,7 +3,7 @@
 
 ![Alt-foto](https://drive.google.com/file/d/1sMF5MXjPomjuL1rpN58jQF6RmzgwK24f/view?usp=sharing "foto-user")
 
-### Contacts
+## Contacts
 
 _tel: +380 (67) 988 47 33_
 
@@ -13,7 +13,7 @@ _[GitHub:](https://github.com/Alina-Zadorojnaya "my github") _
 
 
 
-## Skills
+### Skills
 * HTML
 * CSS (SASS/LESS, BEM methodology)
 * JavaScript (Basic)
