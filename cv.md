@@ -1,7 +1,7 @@
 
 # Alina Zadorojnaya
 
-![Alt-foto](https://drive.google.com/file/d/1sMF5MXjPomjuL1rpN58jQF6RmzgwK24f/view?usp=sharing "foto-user")
+![](https://drive.google.com/file/d/1sMF5MXjPomjuL1rpN58jQF6RmzgwK24f/view?usp=sharing)
 
 ## Contacts
 
@@ -50,3 +50,7 @@ describe("Multiply", () => {
 });
 
 ```
+`
+
+
+
