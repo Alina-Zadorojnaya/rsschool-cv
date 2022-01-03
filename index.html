@@ -17,26 +17,26 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a class="menu__link" href="#">contact</a>
+                            <a class="menu__link" href="#contacts">contact</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">skill</a>
+                            <a class="menu__link" href="#skils">skill</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">education</a>
+                            <a class="menu__link" href="#education">education</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">code</a>
+                            <a class="menu__link" href="#skils">code</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">about me</a>
+                            <a class="menu__link" href="#info">about me</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main class="main">
-            <section class="info section">
+            <section id="info" class="info section">
                 <div class="container">
                     <div class="info__inner">
                         <img class="images" src="images/foto.jpg" alt="foto user">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts section">
+            <section id="contacts" class="contacts section">
                 <div class="container">
                     <h2 class="sr-only">contact info</h2>
                     <div class="contacts__inner">
@@ -77,11 +77,11 @@
 
                 </div>
             </section>
-            <section class="skils section">
+            <section id="skils" class="skils section">
                 <div class="container">
                     <div class="skils__inner">
                         <div class="skils__code">
-                            <h3 class="title">code</h3>
+                            <h3 class="title title-code">code</h3>
                             <pre>
                                  <code>
                                 function multiply(a, b){
@@ -98,28 +98,61 @@
                                   });
                             </code> 
                             </pre>
-
-
                         </div>
                         <ul class="skils__list">
                             <h3 class="title">skils</h3>
                             <li class="skils__item">
-                                HTML & CSS (SASS/LESS, BEM methodology)
-                            </li>
+                                HTML & CSS </li>
+                            <li class="skils__item">
+                                SASS/LESS, BEM methodology</li>
                             <li class="skils__item">JavaScript (Basic)</li>
                             <li class="skils__item">GitHub</li>
                             <li class="skils__item">Figma, Photoshop</li>
                             <li class="skils__item">Editors: Sublime, VSCode</li>
                         </ul>
-
                     </div>
-
                 </div>
             </section>
-
+            <section id="education" class="section education">
+                <div class="container">
+                    <div class="education__inner">
+                        <div class="education__item">
+                            <h3 class="title">Education</h3>
+                            <ul class="education__list">
+                                <li class="education__info">
+                                    Eastern European University
+                                    <span>Economics and Management</span>
+                                </li>
+                                <li class="education__info">
+                                    Hillel IT School
+                                    <span>courses frontend-development</span>
+                                </li>
+                                <li class="education__info">
+                                   
+                                    Mentors CSS / Html JS
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="education__item">
+                            <h3 class="title">english</h3>
+                            <p>Elementary</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="logo-link" href="https://rs.school/js/">
+                        <img class="logo-img" src="images/rs_school_js.svg" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

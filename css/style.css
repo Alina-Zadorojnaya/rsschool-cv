@@ -31,7 +31,7 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color: #f0f9ff;
-    color: #624f97;
+    color: #876fc8;
 }
 
 html, 
@@ -85,13 +85,26 @@ pre {
     overflow: hidden;
 }
 .container {
-    max-width: 1000px;
+    max-width: 900px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }
 .header {
     background-color: #b8bfe4;
+}
+
+.header.sticky {
+    transition: all 0.5s ease;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #b8bfe4;
+    z-index: 6;
 }
 
 .menu,
@@ -127,20 +140,25 @@ pre {
 .menu__link:hover {
     opacity: 0.7;
 }
-.contacts__inner,
 .info__inner {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
+}
+.contacts__inner,
+.info__inner,
+.skils__inner,
+.education__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .title-name {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
+    color: #624f97;
 
 }
-
 
 .title-name span {
     position: relative;
@@ -179,14 +197,13 @@ pre {
     font-size: 24px;
     letter-spacing: 0.3em;
     margin-bottom: 20px;
+    color: #624f97;
 }
 
 .contacts__link {
     padding-left: 20px;
     position: relative;
 }
-
-
 
 .contacts__link::before {
     content: '';
@@ -214,15 +231,97 @@ pre {
     background-image: url('../images/icon/github.svg');
 
 }
-
-
-.skils__inner {
-    display: flex;
-    justify-content: space-around;
+.title-code {
+    margin-bottom: 0;
 }
-
 .skils__code {
     max-width: 430px;
     width: 100%;
+    font-size: 14px;
 }
 
+.skils__item {
+    margin-bottom: 10px;
+}
+
+.education__info {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.education__info span{
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+    margin-left: 10px;
+}
+
+.footer__inner {
+    padding: 15px 0;
+    text-align: center;
+}
+.logo-img {
+    width: 100px; 
+}
+.logo-link {
+    display: inline-block;
+    transition-property: box-shadow, opacity;
+    transition-duration: 0.4s, 0.5s;
+    border-radius: 3px;
+}
+
+.logo-link:focus {
+    box-shadow: 0 0 0 3px #624f97;
+}
+.logo-link:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .title-name {
+        font-size: 30px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .section {
+        margin-bottom: 30px;
+    }
+    .contacts__text {
+        max-width: 300px;
+    }
+    .skils__code {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skils__code {
+        max-width: 350px;
+        width: 100%;
+    }
+    .contacts__inner, .info__inner, .skils__inner, .education__inner {
+        display: block;
+        text-align: center;
+    }
+    .contacts__text,
+    .skils__code {
+        margin: 0 auto 20px;
+    }
+    .title-name {
+        font-size: 24px;
+    }
+    .title-name span:before {
+        width: 50px;
+        height: 2px;
+    }
+    
+    .title {
+        margin-bottom: 10px;
+    }
+    .education__item,
+    .contacts__text {
+        margin-bottom: 20px;
+    }
+}
